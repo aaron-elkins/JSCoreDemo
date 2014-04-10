@@ -33,6 +33,11 @@
     // Drawing code here.
 }
 
+/* Why obj.log("Hello"); not work before
+ * Coz NSTextView will's smart quote is not ascii
+ * It works by using NSTextField instead.
+ */
+
 - (void)log:(NSString *)string{
     NSLog(@"%@", string);
 }
